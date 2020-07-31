@@ -1,29 +1,12 @@
-# README #
+# Exercises #
+ Some JS Exercises. I made a Web server (using Apache Tomcat with Maven)
+ just to organize the pages and make it easier to edit them.
+ 
+ 
+# Logbook #
+ 
+## v0.0.1-20200731 ##
+ 
+ Repository creation.
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+ --------------------------------------------------------------------
