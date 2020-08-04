@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title> JS Exercise </title>
+  <meta charset="utf-8"/>
+  <style>
+    
+  </style>
+  <script>
+    var pontos = prompt("Digite um número. Você tem 3 chances.");
+    var chances = 3;
+    var vidas = 0;
+    //vitoria => >=30 && <=40 || >=70 && <=80
+    while (chances > 0 && chances !== 4)
+    {
+      if ((pontos >=30 && pontos<=40) || (pontos >=70 && pontos <=80))
+      {
+        alert("Parabéns, você ganhou!");
+        vidas = chances;
+        chances = 4;
+      }
+      else
+      {
+        chances--;
+        if (chances !== 0)
+        {
+          var pontos = prompt("Você perdeu! Você tem " + chances + " chances.");
+        }
+      }
+    }
+    if (chances === 0)
+    {
+      var resp = confirm("Game over! Deseja tentar novamente?");
+      if (resp === true)
+      {
+        chances = 3;
+        location.reload();
+      }
+    }
+    else
+    {
+      document.write("Ganhou escolhendo o número " + pontos + ", sobrando " + vidas + " chances.");
+    }
+  </script>
+</head>
+<body>
+  <div id="dv1"></div>
+  <br/>
+</body>
+</html>
