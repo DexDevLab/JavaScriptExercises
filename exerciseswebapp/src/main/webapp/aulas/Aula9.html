@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title> JS Exercise </title>
+  <meta charset="utf-8"/>
+  <style>
+    
+  </style>
+  <script>
+    var nota = prompt("Digite a nota:", "Nota");
+    //aprovado => >=60;
+    //recuperacao => >=40 && <60;
+    //reprovado => <40
+    if (nota >=60)
+    {
+      document.write("Aprovado!");
+      alert("Aprovado!");
+    }
+    else if (nota <40)
+    {
+      document.write("Reprovado!");
+      alert("Reprovado");
+    }
+    else
+    {
+      document.write("Recuperação");
+      alert("Recuperação!");
+    }
+  </script>
+</head>
+<body>
+  <div id="dv1"></div>
+  <br/>
+</body>
+</html>

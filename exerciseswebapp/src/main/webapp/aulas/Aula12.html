@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title> JS Exercise </title>
+  <meta charset="utf-8"/>
+  <style>
+    
+  </style>
+  <script>
+    var pontos = prompt("Digite a pontuação:", "Pontuação");
+    var msg = "";
+    if (pontos >80)
+    {
+      pos = 1;
+    }
+    else if (pontos <30)
+    {
+      pos = 3;
+    }
+    else
+    {
+      pos = 2;
+    }
+    switch(pos)
+    {
+      case 1:
+        msg = "Primeiro Lugar!";
+        break;
+      case 2:
+        msg = "Segundo Lugar!";
+        break;
+      case 3:
+        msg = "Terceiro Lugar!";
+        break;
+      default:
+        msg = "Não foi ao pódio";
+        break;
+    }
+    document.write(msg);
+    alert(msg);
+  </script>
+</head>
+<body>
+  <div id="dv1"></div>
+  <br/>
+</body>
+</html>

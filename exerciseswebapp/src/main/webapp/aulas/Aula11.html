@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title> JS Exercise </title>
+  <meta charset="utf-8"/>
+  <style>
+    
+  </style>
+  <script>
+    var nota = prompt("Digite a nota:", "Nota");
+    var res = "";
+    //aprovado => >=60
+    //aprovado com louvor => >=95
+    //recuperacao => >=40 && <60
+    //reprovado => <40
+    //reprovado com nota baixa => <=20
+    if (nota >=60)
+    { 
+      res = "Aprovado";
+      if (nota >=95)
+      {
+        res += " com louvor";
+      }
+    }
+    else if (nota <40)
+    {
+      res = "Reprovado";
+      if (nota <=20)
+      {
+        res += " com nota baixa";
+      }
+    }
+    else
+    {
+      res = "Recuperação!";
+    }
+    document.write(res);
+    alert(res);
+  </script>
+</head>
+<body>
+  <div id="dv1"></div>
+  <br/>
+</body>
+</html>
