@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title> JS Exercise </title>
+  <meta charset="utf-8"/>
+  <style>
+    
+  </style>
+  <script>
+    
+    var num;
+    
+    try
+    {
+      num  = prompt ("Digite um número:");
+      num = parseInt(num);
+      if (num < 10)
+      {
+        throw new Error("Valor inválido! Valor deve ser maior que 10 <br>");
+      }
+      document.write("Valor: " + num + "<br>");
+    }
+    catch(e)
+    {
+      document.write("ERRO " + e.message);
+    }
+    finally
+    {
+      document.write("Fim do tratamento");
+    }
+    
+    
+    
+    
+  </script>
+</head>
+<body>
+  <div id="dv1"></div>
+  <br/>
+</body>
+</html>

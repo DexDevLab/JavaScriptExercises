@@ -84,6 +84,34 @@ The dynamic webpage for the Home Page.
           <td> <a href="aulas/Aula17.html">Aula 17</a></td>
           <td>Incremento e decremento de variáveis</td>
         </tr>
+        <tr>
+          <td> <a href="aulas/Aula18.html">Aula 18</a></td>
+          <td>Loop FOR</td>
+        </tr>
+        <tr>
+          <td> <a href="aulas/Aula19.html">Aula 19</a></td>
+          <td>Loop While</td>
+        </tr>
+        <tr>
+          <td> <a href="aulas/Aula20.html">Aula 20</a></td>
+          <td>Loop DO While</td>
+        </tr>
+        <tr>
+          <td> <a href="aulas/Aula21.html">Aula 21</a></td>
+          <td>Declaração de variável com let</td>
+        </tr>
+        <tr>
+          <td> <a href="aulas/Aula22.html">Aula 22</a></td>
+          <td>Tratamento de erros com try/catch/finally</td>
+        </tr>
+        <tr>
+          <td> <a href="aulas/Aula23.html">Aula 23</a></td>
+          <td>Manipular Elementos HTML com JS - getElementById</td>
+        </tr>
+        <tr>
+          <td> <a href="aulas/Aula24.html">Aula 24</a></td>
+          <td>innerHTML e mais de getElementbyId</td>
+        </tr>
       </table>
     </body>
 </html>

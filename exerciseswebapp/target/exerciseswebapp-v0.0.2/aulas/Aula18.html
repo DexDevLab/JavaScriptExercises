@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title> JS Exercise </title>
+  <meta charset="utf-8"/>
+  <style>
+    
+  </style>
+  <script>
+    
+    /*
+    var positions = prompt ("Insira o número de posições para o Array", "1");
+    positions = parseInt(positions);
+    var cont = [];
+    for (a = 0; a<positions; a++)
+    {
+      cont.push(a);
+    }
+    for (i=0; i<cont.length; i++)
+    {
+      document.write(cont[i] + "<br>");
+    }
+    */
+    
+    var itens = ["Corda", "Cura", "Lanterna", "Pilhas"];
+    var quantidades = [1, 10, 1, 20];
+    var mochila = [];
+    
+    for(i=0; i<itens.length; i++)
+    {
+      var arr = new Array();
+      arr.push(itens[i]);
+      arr.push(quantidades[i]);
+      mochila.push(arr);
+    }
+  
+    for(a=0; a<mochila.length; a++)
+    {
+      for (b=0; b<2; b++)
+      {
+        document.write(mochila[a][b] + " ");
+      }
+      document.write("<br>");
+    }
+    
+
+    
+    
+    
+    
+  </script>
+</head>
+<body>
+  <div id="dv1"></div>
+  <br/>
+</body>
+</html>
