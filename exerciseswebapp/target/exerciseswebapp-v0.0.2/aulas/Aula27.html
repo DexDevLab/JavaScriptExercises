@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title> JS Exercise </title>
+  <meta charset="utf-8"/>
+  <style>
+    label
+    {
+      display:block;
+    }
+    input
+    {
+      display:block;
+    }
+    input[type=submit], label
+    {
+      margin-top:10px;
+    }
+  </style>
+  
+</head>
+<body>
+  <form name="JavaScript" id="js" action="#" method="post">
+    <label>Nome</label>
+    <input type="text" name="fNome" id="teste" value="Primeiro - 1">
+    <label>Senha</label>
+    <input type="password" name="fSenha" value="123">
+    <input type="submit" name="btEnviar" value="Enviar">
+  </form>
+  
+  <hr/>
+  
+  <script>
+    var form = document.forms["JavaScript"];
+    var elmnts = form.elements;
+    
+    elmnts[0].style.backgroundColor="#f00";
+    elmnts[0].value="Teste";
+    
+    
+  </script>
+  
+  
+  
+  
+  
+</body>
+</html>

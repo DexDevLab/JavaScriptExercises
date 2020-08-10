@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title> JS Exercise </title>
+  <meta charset="utf-8"/>
+  <script>
+    
+    var dt = new Date();
+    var daywk = dt.getDay();
+    var dia = dt.getDate();
+    var mth = dt.getMonth();
+    var yar = dt.getFullYear();
+    var wkday = dt.getDay();
+    
+    var horas = dt.getHours();
+    var minutos = dt.getMinutes();
+    var segundos = dt.getSeconds();
+    
+    const meses = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+    const diasem = new Array("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado");
+    
+    
+    document.write(diasem[wkday] + " , " + dia + " de " + meses[mth] + " de " + yar + "<br>");
+    document.write(horas + ":" + minutos + ":" + segundos);
+    
+    
+  </script>
+  
+</head>
+<body>
+  
+  
+  
+  <hr/>
+  
+  
+</body>
+</html>

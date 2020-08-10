@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title> JS Exercise </title>
+  <meta charset="utf-8"/>
+  <style>
+    .titulo
+    {
+      color:#f00;
+      font-size:20px;
+      text-decoration:underline;
+    }
+    div
+    {
+      border:1px solid #000;
+      padding:10px;
+      display:inline-block;
+    }
+    .quadro
+    {
+      background:#ddd;
+    }
+    a
+    {
+      display:block;
+    }
+  </style>
+  
+</head>
+<body>
+  <h1 class ="titulo">querySelectorAll</h1>
+  <p>O querySelectorAll() é um método que retorna os elementos do documento que correspondem a uma classe de CSS ou a uma tag específica.</p>
+  <h2 class="titulo">JavaScript</h2>
+  <p>JS</p>
+  <div>
+    <h1>JS</h1>
+    <p>Esse texto está dentro de uma DIV</p>
+    <p>Esse também</p>
+  </div>
+  <div class="quadro">
+    <h1>JS</h1>
+    <p>Esse texto está dentro de uma DIV</p>
+    <p>Esse também</p>
+  </div>
+  <a href="www.youtube.com">YouTube</a>
+  
+  <hr/>
+  
+  <script>
+    var ps = document.querySelectorAll("h1,h2");
+    for (i=0; i<ps.length; i++)
+    {
+      ps[i].style.color="#0a0";
+    }
+    
+    
+    
+  </script>
+  
+  
+  
+  
+  
+</body>
+</html>

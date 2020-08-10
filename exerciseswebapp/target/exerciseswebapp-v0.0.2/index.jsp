@@ -112,6 +112,30 @@ The dynamic webpage for the Home Page.
           <td> <a href="aulas/Aula24.html">Aula 24</a></td>
           <td>innerHTML e mais de getElementbyId</td>
         </tr>
+        <tr>
+          <td> <a href="aulas/Aula25.html">Aula 25</a></td>
+          <td>getElementsByTagName</td>
+        </tr>
+        <tr>
+          <td> <a href="aulas/Aula26.html">Aula 26</a></td>
+          <td>querySelectorAll()</td>
+        </tr>
+        <tr>
+          <td> <a href="aulas/Aula27.html">Aula 27</a></td>
+          <td>Manipulando Forms com JavaScript</td>
+        </tr>
+        <tr>
+          <td> <a href="aulas/Aula28.html">Aula 28</a></td>
+          <td>Date() - Manipular Data e Hora</td>
+        </tr>
+        <tr>
+          <td> <a href="aulas/Aula29.html">Aula 29</a></td>
+          <td>Math - Métodos e Constantes Matemáticas</td>
+        </tr>
+        <tr>
+          <td> <a href="aulas/Aula30.html">Aula 30</a></td>
+          <td>Criando suas próprias funções</td>
+        </tr>
       </table>
     </body>
 </html>
