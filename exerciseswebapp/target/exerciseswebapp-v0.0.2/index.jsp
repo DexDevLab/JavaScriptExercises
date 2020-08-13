@@ -136,6 +136,14 @@ The dynamic webpage for the Home Page.
           <td> <a href="aulas/Aula30.html">Aula 30</a></td>
           <td>Criando suas próprias funções</td>
         </tr>
+        <tr>
+          <td> <a href="aulas/Aula31.html">Aula 31</a></td>
+          <td>Escopo de Variáveis</td>
+        </tr>
+        <tr>
+          <td> <a href="aulas/Aula32.html">Aula 32</a></td>
+          <td>Eventos</td>
+        </tr>
       </table>
     </body>
 </html>

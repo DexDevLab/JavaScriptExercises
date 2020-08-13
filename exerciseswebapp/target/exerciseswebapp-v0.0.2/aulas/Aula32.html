@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title> JS Exercise </title>
+  <meta charset="utf-8"/>
+  <style>
+    #dv1
+    {
+      width:200px;
+      height:200px;
+      border:1px solid #000;
+    }
+    
+  </style>
+  <script>
+   
+   function mudaCor(obj, cor)
+   {
+     obj.style.backgroundColor = cor;
+   }
+   
+   function mudaPos(obj)
+   {
+     obj.style.position = "absolute";
+     obj.style.left=Math.random()*500+"px";
+     obj.style.top=Math.random()*500+"px";
+   }
+   
+   function ola()
+   {
+     var data = new Date();
+     var hora = data.getHours();
+     var txt = "";
+     if (hora < 12)
+     {
+       txt = "Bom dia";
+     }
+     else if (hora <18)
+     {
+       txt = "Boa tarde";
+     }
+     else
+     {
+       txt = "Boa noite";
+     }
+     alert("Olá, " + txt);
+   }
+  
+ 
+  </script>
+  
+</head>
+<body onload="ola()">
+  <div id="dv1" onmouseover="mudaCor(this, '#f00')" onmouseout="mudaCor(this, '#fff')"></div> 
+  <hr/>
+  <button onclick='alert("JavaScript")' onmouseover="mudaPos(this)">Click</button>
+  
+</body>
+</html>
