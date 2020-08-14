@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title> JS Exercise </title>
+  <meta charset="utf-8"/>
+  <style>
+    #dv1
+    {
+      width:200px;
+      height:200px;
+      border:1px solid #000;
+      background-color:#f00;
+      position:absolute;
+      left:0px;
+      top:0px;
+    }
+  </style>
+  <script>
+    var px = 0;
+    var py = 0;
+    
+    function move()
+    {
+      var obj = document.getElementById("dv1");
+      var pressed = event.keyCode;
+      if (pressed === 37)
+      {
+        px-=50;
+        obj.style.left = px+"px"; 
+      }
+      else if (pressed === 38)
+      {
+        py-=50;
+        obj.style.top = py+"px";
+      }
+      else if (pressed === 39)
+      {
+        px+=50;
+        obj.style.left = px+"px";
+      }
+      else if (pressed === 40)
+      {
+        py+=50;
+        obj.style.top = py+"px";
+      }
+      else if (pressed === 13)
+      {
+        alert("Evento keydown Removido");
+        document.removeEventListener("keydown", move);
+      }
+      else
+      {
+        alert("Tecla incorreta.");
+      }
+    }
+    
+    document.addEventListener("keydown", move);
+    document.addEventListener("click", start);
+    
+    function start ()
+    {
+      alert("Evento keydown adicionado");
+      document.addEventListener("keydown", move);
+    }
+  </script>
+  
+  
+</head>
+<body>
+  <div id="dv1"></div>
+</body>
+</html>

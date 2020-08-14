@@ -144,6 +144,18 @@ The dynamic webpage for the Home Page.
           <td> <a href="aulas/Aula32.html">Aula 32</a></td>
           <td>Eventos</td>
         </tr>
+        <tr>
+          <td> <a href="aulas/Aula33.html">Aula 33</a></td>
+          <td>addEventListener(Eventos)</td>
+        </tr>
+        <tr>
+          <td> <a href="aulas/Aula34.html">Aula 34</a></td>
+          <td>addEventListener(Eventos) - Parte 2</td>
+        </tr>
+        <tr>
+          <td> <a href="aulas/Aula35.html">Aula 35</a></td>
+          <td>setTimeout e setInterval</td>
+        </tr>
       </table>
     </body>
 </html>
