@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title> JS Exercise </title>
+  <meta charset="utf-8"/>
+  <style>
+    #watch
+    {
+      text-align: center;
+      color: slateblue;
+      font-weight: bold;
+      font-size: 30px;
+      width: 200px;
+      background-color: #000;
+    }
+    
+  </style>
+  <script>
+    
+    function relogio()
+    {
+      var data = new Date();
+      var hora = data.getHours();
+      var minuto = data.getMinutes();
+      var segundo = data.getSeconds();
+      var milisegundo = data.getMilliseconds();
+      
+      if (hora < 10)
+      {
+        hora = "0" + hora;
+      }
+      if (minuto <10)
+      {
+        minuto = "0" + minuto;
+      }
+      if (segundo <10)
+      {
+        segundo = "0" + segundo;
+      }
+      if (milisegundo <10)
+      {
+        milisegundo = "00" + milisegundo;
+      }
+      if (milisegundo <100)
+      {
+        milisegundo = "0" + milisegundo;
+      }
+      
+      
+      
+      var tempo = hora + ":" + minuto + ":" + segundo + "::" + milisegundo;
+      document.getElementById("watch").value = tempo;
+    }
+    
+    
+    
+    
+    var interval = setInterval(relogio, 1);
+    window.addEventListener("load", relogio);
+  </script>
+  
+  
+</head>
+<body>
+  <input type="text" id="watch"/>
+</body>
+</html>

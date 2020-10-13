@@ -156,6 +156,18 @@ The dynamic webpage for the Home Page.
           <td> <a href="aulas/Aula35.html">Aula 35</a></td>
           <td>setTimeout e setInterval</td>
         </tr>
+        <tr>
+          <td> <a href="aulas/Aula36.html">Aula 36</a></td>
+          <td>Base de Animações Javascript</td>
+        </tr>
+        <tr>
+          <td> <a href="aulas/Aula37.html">Aula 37</a></td>
+          <td>Relógio Digital Funcional</td>
+        </tr>
+        <tr>
+          <td> <a href="aulas/Aula38.html">Aula 38</a></td>
+          <td>requestAnimationFrame</td>
+        </tr>
       </table>
     </body>
 </html>

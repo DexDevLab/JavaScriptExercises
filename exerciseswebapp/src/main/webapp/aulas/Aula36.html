@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title> JS Exercise </title>
+  <meta charset="utf-8"/>
+  <style>
+    #dv1
+    {
+      width:200px;
+      height:200px;
+      border:1px solid #000;
+      background-color:#f00;
+      position:absolute;
+      left:0px;
+      top:0px;
+    }
+  </style>
+  <script>
+    var dx;
+    var dy;
+    var px;
+    var py;
+    var vel;
+    var obj;
+    var tmp;
+    
+    function iniciar()
+    {
+      dx = 0;
+      dy = 0;
+      px = 0;
+      py = 0;
+      vel = 1;
+      obj = document.getElementById("dv1");
+      document.addEventListener("keydown", teclaKd );
+      document.addEventListener("keyup", teclaKu);
+      tmp = setInterval(enterFrame, 1);
+    }
+    
+    function teclaKd()
+    {
+      var pressed = event.keyCode;
+      if (pressed === 37)
+      {
+        dx = -1;
+      }
+      else if (pressed === 38)
+      {
+        dy = -1;
+      }
+      else if (pressed === 39)
+      {
+        dx = 1;
+      }
+      else if (pressed === 40)
+      {
+        dy = 1;
+      }
+      else
+      {
+        alert("Tecla incorreta.");
+      }
+    }
+    
+    function teclaKu()
+    {
+      var pressed = event.keyCode;
+      if (pressed === 37)
+      {
+        dx = 0;
+      }
+      else if (pressed === 38)
+      {
+        dy = 0;
+      }
+      else if (pressed === 39)
+      {
+        dx = 0;
+      }
+      else if (pressed === 40)
+      {
+        dy = 0;
+      }
+      else
+      {
+        alert("Tecla incorreta.");
+      }
+    }
+    
+    function enterFrame()
+    {
+      px += dx*vel;
+      py += dy*vel;
+      obj.style.left = px + "px";
+      obj.style.top = py + "px";
+    }
+    
+    window.addEventListener("load", iniciar);
+   
+  </script>
+  
+  
+</head>
+<body>
+  <div id="dv1"></div>
+</body>
+</html>
